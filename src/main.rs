@@ -14,6 +14,7 @@ fn main() {
     for to_str in &args[1..] {
         if from_str == to_str {
             print_valid(from_str, to_str);
+            continue;
         }
 
         match get_char_diff(from_str, to_str) {
